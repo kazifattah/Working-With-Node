@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of Users</title>
+</head>
+<body>
+    <h1>List of All Users</h1>
+    <ul>
+        <% contactinfo.forEach(contactinfo => { %>
+            <li>
+                <%= contactinfo.firstname+ " | "+contactinfo.lastname+ " | "+contactinfo.email+ " | "+contactinfo.phone+ " | "+contactinfo.city+ " | "+contactinfo.province+ " | "+contactinfo.postalcode %>
+                <a href="/edit/<%= contactinfo.id %>">Update</a>
+                <a href="/delete/<%= contactinfo.id %>">Delete</a>
+                
+
+            </li>
+         
+        <% }) %>
+    </ul>
+
+    <a href="/">Go Back Home</a>
+    
+    
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Info</title>
+</head>
+<body>
+    <h1>
+        Edit info
+    </h1>
+
+    <form action="/edit/<%= contactinfo.id %>" method="post">
+        <label for="">First Name:</label>
+        <input type="text" name="firstname" value="<%= contactinfo.firstname %>"><br>
+       
+        <label for="">Last Name:</label>
+        <input type="text" name="lastname" value="<%= contactinfo.lastname %>"><br>
+        
+        <label for="">Email:</label>
+        <input type="email" name="email" value="<%= contactinfo.email %>"><br>
+
+        <label for=""></label>Phone:</label>
+        <input type="text" name="phone" value="<%= contactinfo.phone %>"><br>
+
+        <label for=""></label>City:</label>
+        <input type="text" name="city" value="<%= contactinfo.city %>"><br>
+
+        <label for=""></label>Province:</label>
+        <input type="text" name="province" value="<%= contactinfo.province %>"><br>
+
+        <label for=""></label>Postal Code:</label>
+        <input type="text" name="postalcode" value="<%= contactinfo.postalcode %>"><br>
+
+        
+        <button type="submit">Add</button>
+        
+    </form>
+    
+</body>
+</html>

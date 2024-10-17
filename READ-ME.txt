@@ -1,0 +1,9 @@
+Some instructions on how to run the website:
+
+1. Please install the appropriate modules found in packages.json by running npm install
+
+2. Make sure the password in utils/database.js is set to your server password
+
+3. This website was created for random people to learn about Pokémon. Therefore they should not have access to "/userlog" where you can view, update and delete database entries. Thus I have not included any link to this endpoint on the webpage itself and this page was also not styled. However, if any backend user(such as Sam Sofela who is grading my assignment) would like to access this information they are free to do so by going to "/userlog". This is also mentioned in a comment on app.js but I thought I should mention it again here.
+
+3. Enjoy learning about Pokémon!
